@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Employees Information ..</h1><hr>
+    {% if employees %}
+<table>
+    <thead>
+    <th>Employee Number</th>
+    <th>Employee Name</th>
+    <th>Employee Salary</th>
+    <th>Employee Address</th>
+    </thead>
+    {% for emp in employees%}
+    <tr>
+        <tr>emp.eno</tr>
+        <tr>emp.ename</tr>
+        <tr>emp.esal</tr>
+        <tr>emp.eaddr</td>
+    </tr>
+    {%endfor%}
+</table>
+{%else%}
+<p>No Employee Records Found !!! </p>
+{%endif%}
+</body>
+</html>
